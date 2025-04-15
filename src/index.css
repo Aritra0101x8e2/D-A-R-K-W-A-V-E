@@ -1,0 +1,81 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 196 100% 47%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 215 25% 27%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 212 100% 47%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cyber-dark text-foreground;
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-cyber-blue/20 shadow-lg shadow-cyber-blue/5;
+  }
+
+  .highlight-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-cyber-blue to-cyber-teal;
+  }
+
+  .cyber-gradient {
+    @apply bg-gradient-to-r from-cyber-blue to-cyber-teal;
+  }
+
+  .glow-border {
+    @apply border border-cyber-blue/50 shadow-[0_0_15px_rgba(14,165,233,0.3)];
+  }
+
+  .grid-bg {
+    @apply bg-cyber-grid bg-fixed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
