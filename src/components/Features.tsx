@@ -6,11 +6,11 @@ const Features = () => {
   const features = [
     {
       icon: <Brain className="h-10 w-10" />,
-      title: "Sentinel.AI - Our Authentication Software",
+      title: "VOX SECURE - Our Authentication Software",
       description:
         "Our AI Driven Authentication continuously learns from user behavior patterns to detect anomalies and prevent unauthorized access, even when credentials are compromised.",
       color: "cyber-blue",
-      link: "https://sentinel-ai-dark-wave.vercel.app/",
+      link: "https://voxsecure-darkwave-aritra.vercel.app/",
     },
     {
       icon: <Fingerprint className="h-10 w-10" />,
@@ -82,7 +82,6 @@ const Features = () => {
                 </CardContent>
               </Card>
             );
-
             return (
               <div
                 key={index}
