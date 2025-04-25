@@ -6,7 +6,7 @@ const socialLinks = {
   Twitter: "https://x.com/Aritra123x",
   LinkedIn: "https://www.linkedin.com/in/aritra-kundu-0689a7320/",
   Facebook: "https://www.facebook.com/aritra.kundu.35574",
-  GitHub: "https://github.com/Aritra0101x8e2",
+  // GitHub: "https://github.com/Aritra0101x8e2",
   Instagram: "https://www.instagram.com/__aritra__001/",
 };
 
@@ -27,13 +27,13 @@ const teamMembers = [
   },
   {
     name: "Shivam Kumar",
-    title: "CTO",
+    title: "Marketing Specialist",
     image: "/shivam.png",
     link: "https://www.facebook.com/profile.php?id=100036321540863&mibextid=ZbWKwL",
   },
   {
     name: "Prince Kumar",
-    title: "CDO",
+    title: "Buisness Analyst",
     image: "/prince.png",
     link: "https://www.linkedin.com/in/prince-kr-jha-505475273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
