@@ -6,7 +6,6 @@ import { ShieldCheck, ArrowRight } from "lucide-react";
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Particle animation effect
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -14,7 +13,6 @@ const Hero = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Set canvas dimensions
     const setCanvasDimensions = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -23,11 +21,9 @@ const Hero = () => {
     setCanvasDimensions();
     window.addEventListener("resize", setCanvasDimensions);
 
-    // Particle settings
     const particlesArray: Particle[] = [];
     const numberOfParticles = Math.min(100, window.innerWidth / 10);
 
-    // Particle class
     class Particle {
       x: number;
       y: number;
@@ -66,31 +62,26 @@ const Hero = () => {
       }
     }
 
-    // Create particles
     const createParticles = () => {
       for (let i = 0; i < numberOfParticles; i++) {
         particlesArray.push(new Particle());
       }
     };
 
-    // Draw and update particles
     const animate = () => {
       if (!ctx) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw particles
+
       for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
         particlesArray[i].draw();
       }
-      
-      // Draw connections
+
       connectParticles();
       
       requestAnimationFrame(animate);
     };
 
-    // Connect particles with lines
     const connectParticles = () => {
       if (!ctx) return;
       for (let a = 0; a < particlesArray.length; a++) {
@@ -149,17 +140,17 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
           <a href="#features">
   <Button className="w-full sm:w-auto text-white bg-cyber-blue hover:bg-cyber-blue/90 px-6 py-6">
-    Get Started Today
+    Fraud Dashboard
   </Button>
 </a>
 
             <a
-  href="https://darkwave-softwares-aritra.vercel.app/"
+  href="https://ryvora-darkwave-aritra.vercel.app/"
   target="_blank"
   rel="noopener noreferrer"
 >
   <Button variant="outline" className="w-full sm:w-auto border-cyber-blue/50 text-cyber-blue hover:bg-cyber-blue/10 px-6 py-6">
-    Watch Demo
+    RYVORA AI
     <ArrowRight className="ml-2 h-4 w-4" />
   </Button>
 </a>
