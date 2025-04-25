@@ -138,7 +138,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-          <a href="#features">
+          <a href="https://prysm-darkwave-aritra.vercel.app/">
   <Button className="w-full sm:w-auto text-white bg-cyber-blue hover:bg-cyber-blue/90 px-6 py-6">
     Fraud Dashboard
   </Button>
