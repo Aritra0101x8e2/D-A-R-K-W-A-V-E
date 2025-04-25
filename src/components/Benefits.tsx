@@ -29,7 +29,7 @@ const Benefits = () => {
         "Automated threat detection and response reduces incident handling time from days to minutes.",
       metric: "98%",
       metricLabel: "Faster Response",
-      link: "https://your-link-2.com",
+      link: "https://sereni-sheild-darkwave-aritra.vercel.app/",
     },
     {
       icon: <UserCheck className="h-10 w-10 text-cyber-blue/80" />,
@@ -47,7 +47,7 @@ const Benefits = () => {
         "Meet regulatory requirements with comprehensive security controls and detailed audit logs.",
       metric: "100%",
       metricLabel: "Compliance Rate",
-      link: "https://your-link-4.com",
+      link: "https://network-traffic-aritra-darkwave.vercel.app/",
     },
   ];
 
